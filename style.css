@@ -8,3 +8,8 @@ body {
     color: lightgoldenrodyellow;
     font-family: 'Courier New', Courier, monospace;
 }
+
+p2 {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
