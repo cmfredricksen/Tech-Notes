@@ -4,12 +4,39 @@
 }
 
 body {
-    background-color: brown;
+    background-color:darkviolet;
     color: lightgoldenrodyellow;
     font-family: 'Courier New', Courier, monospace;
 }
 
 p2 {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto, 1fr);
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat (4, minmax(200px, 1fr));
+    grid-row: auto; 
+}
+
+.header{
+    background-color: lightgoldenrodyellow;
+    color: deeppink;
+    columns: 1 / 4;
+
+}
+
+
+
+.box {
+    background-color:lightgoldenrodyellow;
+    color: brown;
+    font-style: italic;
+}
+
+.side {}
+
+.main {}
+
+.footer{}
