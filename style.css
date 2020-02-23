@@ -5,19 +5,67 @@
 }
 
 body {
-  
-    
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
 
- 
-    grid-template-areas:  
-            "head head head head head head head head head head head head"
-            "nav nav nav nav nav nav ......"
-            "side side side main main main main main box box box box"
-            "side side side main main main main main box box box box"
-            "side side side foot foot foot foot foot box box box";
+main {
+    padding: 10px;
+    display: flexbox;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 100px auto;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+p {
+    margin: 5px;
+    background-color: lavender;
+}
+
+ol {
+    font-style: oblique;
+    background-color: lavenderblush;
+}
+
+ul {
+    font-style: italic;
+    background-color: lemonchiffon;
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: lavender;
+    padding: 15pt;
+}
+
+.nav {
+    grid-column: 1 / 4;
+    grid-row: 2/ 3;
+    background-color: lemonchiffon;
+    padding: 10px;
     
 }
+
+
+.side {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+
+.foot {
+    grid-area: foot;
+    
+    grid-column: 1 / 4;
+}
+
 
 
 
