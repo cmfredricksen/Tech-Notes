@@ -1,91 +1,23 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: darkviolet;
+    
 }
 
 body {
   
-    color: lightgoldenrodyellow;
+    
     font-family: 'Courier New', Courier, monospace;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+
+ 
+    grid-template-areas:  
+            "head head head head head head head head head head head head"
+            "nav nav nav nav nav nav ......"
+            "side side side main main main main main box box box box"
+            "side side side main main main main main box box box box"
+            "side side side foot foot foot foot foot box box box";
     
-    grid-template-rows: 100px 1fr;
-    
 }
 
 
-
-.header{
-    background-color: lightgoldenrodyellow;
-    color: deeppink;
-    grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row-start: 1;
-    grid-row-end:2;
-    text-align: center;
-    padding-top: 15px;
-    
-  
-
-}
-
-
-
-.box {
-    background-color:lightgoldenrodyellow;
-    color: deeppink;
-    font-style: italic;
-    grid-column: 1 / 4;
-    grid-row: 7 / 9;
-    font-size: x-small;
-    padding-bottom: 20px;
-}
-
-.side {
-    background-color: deeppink;
-    color: lightgoldenrodyellow;
-    grid-column: 1 / 4;
-    grid-row: 2 / 7;
-    padding-right: 10px;
-}
-
-.main {
-    background-color: forestgreen;
-    grid-column: 4 / 13;
-    grid-row: 2 / 7;
-    margin: 5px;
-    padding: 5px;
-    
-  
-}
-
-main.list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr;
-    grid-column: 4 / 13;
-    grid-row: 2 / 7;
-    margin: 10px;
-}
-
-.footer{
-    background-color: greenyellow;
-    color: indigo;
-    grid-column: 4 / 13;
-    grid-row: 7 / 9;
-    font-size: smaller;
-    padding-bottom: 20px;
-}
-
-ul.list {
-    display: grid;
-    list-style-type: lower-alpha;
-    margin-block-start: 2em;
-   
-    margin-inline-start: 5px;
-   
-    padding-inline-start: 0px;
-}
 
