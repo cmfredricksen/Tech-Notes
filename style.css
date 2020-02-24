@@ -8,62 +8,117 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: auto 200px;
+    grid-template-areas: 
+       "head head head head"
+       "side nav nav nav"
+       "side main main main"
+       "side main main main"
+       "foot foot foot foot";
 }
 
-main {
-    padding: 10px;
-    display: flexbox;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 100px auto;
-}
 
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px; 
+   margin: 7px;
+   padding: 7px;
+   background-color: lightcyan;
+}
+
+h4 {
+    margin: 5px;
+    padding: 5px;
+    background-color: lavenderblush;
 }
 
 p {
     margin: 5px;
-    background-color: lavender;
+    
+
 }
+
+a {
+    text-decoration: none;
+    background-color: lavenderblush;
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: lightgreen;
+    
+    
+}
+
+
 
 ol {
     font-style: oblique;
-    background-color: lavenderblush;
+    margin-left: 10pt;
+    padding-left: 40px;
+    line-height: 1.5em;
+    margin-right: 7px;
+    padding-right: 7px;
+    
+    
 }
 
 ul {
     font-style: italic;
-    background-color: lemonchiffon;
+    margin-left: 10pt;
+    padding-left: 40px;
+    margin-right: 7px;
+    padding-right: 7px;
+    
+  
+    
 }
 
 .header {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+    grid-area: head;
     background-color: lavender;
     padding: 15pt;
 }
 
 .nav {
-    grid-column: 1 / 4;
-    grid-row: 2/ 3;
+    grid-area: nav;
     background-color: lemonchiffon;
     padding: 10px;
+    display: inline;
+
     
 }
 
 
 .side {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
+    grid-area: side;
+    background-color: lavenderblush;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightgreen;
+    padding-left: 20px;
+    display: grid;
+    
+    }
+    
+
+#color {
+    background-color: lawngreen;
+}
+
+.box1 {
+    background-color: khaki;
+    font-family: monospace;
 }
 
 
 .foot {
     grid-area: foot;
+    background-color: lightsteelblue;
+
     
-    grid-column: 1 / 4;
 }
 
 
