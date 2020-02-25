@@ -32,6 +32,11 @@ h4 {
     background-color: lavenderblush;
 }
 
+h5 {
+    margin: 7px;
+    padding: 7px;
+}
+
 p {
     margin: 5px;
     
@@ -69,9 +74,15 @@ ul {
     padding-left: 40px;
     margin-right: 7px;
     padding-right: 7px;
-    
-  
-    
+       
+}
+
+ul2 {
+    list-style-type: none;
+}
+
+li {
+    margin: 10pt;
 }
 
 .header {
@@ -87,6 +98,12 @@ ul {
     display: inline;
 
     
+}
+
+.nav2 {
+    background-color: lemonchiffon;
+    padding: 10px;
+
 }
 
 
@@ -117,6 +134,9 @@ ul {
 .foot {
     grid-area: foot;
     background-color: lightsteelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 
     
 }
