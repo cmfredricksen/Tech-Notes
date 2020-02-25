@@ -37,6 +37,10 @@ h5 {
     padding: 7px;
 }
 
+h6 {
+    padding: 20px;
+}
+
 p {
     margin: 5px;
     
@@ -86,6 +90,14 @@ li2 {
     margin: 5pt 0;
     
 
+}
+
+li3 {
+    margin-left: 5pt;
+    margin-top: 5pt;
+    font-size: smaller;
+    background-color: lemonchiffon;
+    
 }
 
 .header {
