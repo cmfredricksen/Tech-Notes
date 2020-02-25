@@ -78,11 +78,14 @@ ul {
 }
 
 ul2 {
-    list-style-type: none;
+    list-style-type: none ;
+    display: grid;
 }
 
-li {
-    margin: 10pt;
+li2 {
+    margin: 5pt 0;
+    
+
 }
 
 .header {
