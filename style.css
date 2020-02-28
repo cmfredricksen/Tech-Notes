@@ -33,6 +33,15 @@ h4 {
     background-color: lavenderblush;
 }
 
+h5 {
+    margin: 7px;
+    padding: 7px;
+}
+
+h6 {
+    padding: 20px;
+}
+
 p {
     margin: .5em;
     
@@ -69,12 +78,29 @@ ol {
 
 ul {
     font-style: italic;
-    margin-left: .5em;
-    padding-left: 2em;
-    margin-right: .5em;
-    padding-right: .5em;
+    margin-left: 10pt;
+    padding-left: 40px;
+    margin-right: 7px;
+    padding-right: 7px;
+       
+}
+
+ul2 {
+    list-style-type: none ;
+    display: grid;
+}
+
+li2 {
+    margin: 5pt 0;
     
-  
+
+}
+
+li3 {
+    margin-left: 5pt;
+    margin-top: 5pt;
+    font-size: smaller;
+    background-color: lemonchiffon;
     
 }
 
@@ -91,6 +117,12 @@ ul {
     display: inline;
 
     
+}
+
+.nav2 {
+    background-color: lemonchiffon;
+    padding: 10px;
+
 }
 
 
@@ -121,6 +153,9 @@ ul {
 .foot {
     grid-area: foot;
     background-color: lightsteelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 
     
 }
