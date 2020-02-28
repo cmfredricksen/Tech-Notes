@@ -34,12 +34,12 @@ h4 {
 }
 
 h5 {
-    margin: 7px;
-    padding: 7px;
+    margin: .5em;
+    padding: .5em;
 }
 
 h6 {
-    padding: 20px;
+    padding: 1em;
 }
 
 p {
@@ -78,10 +78,13 @@ ol {
 
 ul {
     font-style: italic;
-    margin-left: 10pt;
-    padding-left: 40px;
-    margin-right: 7px;
-    padding-right: 7px;
+
+    margin-left: .5em;
+    padding-left: 2em;
+    margin-right: .5em;
+    padding-right: .5em;
+
+
        
 }
 
@@ -91,14 +94,14 @@ ul2 {
 }
 
 li2 {
-    margin: 5pt 0;
+    margin: .5em;
     
 
 }
 
 li3 {
-    margin-left: 5pt;
-    margin-top: 5pt;
+    margin-left: .5em;
+    margin-top: .5em;
     font-size: smaller;
     background-color: lemonchiffon;
     
@@ -121,7 +124,7 @@ li3 {
 
 .nav2 {
     background-color: lemonchiffon;
-    padding: 10px;
+    padding: .5em;
 
 }
 
