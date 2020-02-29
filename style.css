@@ -116,7 +116,7 @@ li3 {
 .nav {
     grid-area: nav;
     background-color: lemonchiffon;
-    padding: 1em;
+    padding: .5em;
     display: inline;
 
     
