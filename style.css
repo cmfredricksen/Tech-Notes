@@ -50,15 +50,24 @@ p {
 
 a {
     text-decoration: none;
-    background-color: lavenderblush;
-    margin-right: 1em;
-    margin-bottom: 1.5em;
-    margin-top: 1em;
+    background-color: lightgreen;
+    color: black;
+    margin: .5em;
     line-height: 1.5em;
+    padding: .12em;
+} 
+
+a1 {
+    color: white;
+}
+
+a1:hover {
+    color: black;
 }
 
 a:hover {
     background-color: lightgreen;
+    color: white;
     
     
 }
@@ -116,10 +125,9 @@ li3 {
 .nav {
     grid-area: nav;
     background-color: lemonchiffon;
-    padding: .5em;
-    display: inline;
-
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
 }
 
 .nav2 {
