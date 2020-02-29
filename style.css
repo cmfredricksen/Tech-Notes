@@ -12,12 +12,34 @@ body {
     display: grid;
     gap: .5em;
     grid-template-rows: auto 10vh;
+    grid-column: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 
        "head head head head"
        "side nav nav nav"
        "side main main main"
        "side main main main"
        "foot foot foot foot";
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+    body {
+        display: flow-root;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    nav {
+        display: table-column;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    footer {
+        display: flow-root;
+    }
 }
 
 
@@ -46,7 +68,8 @@ p {
     margin: .5em;
     
 
-}
+} 
+
 
 a {
     text-decoration: none;
