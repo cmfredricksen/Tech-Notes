@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 1em;
+    gap: .5em;
     grid-template-rows: auto 10vh;
     grid-template-areas: 
        "head head head head"
