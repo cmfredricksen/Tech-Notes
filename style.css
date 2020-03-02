@@ -163,6 +163,8 @@ li3 {
 .side {
     grid-area: side;
     background-color: lavenderblush;
+    font-size: .75em;
+    border: 2px lemonchiffon solid;
 }
 
 .main {
