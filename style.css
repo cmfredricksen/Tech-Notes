@@ -95,6 +95,23 @@ a:hover {
     
 }
 
+.rightb {
+    float: right;
+    padding: .5em;
+    
+    background-color: cornflowerblue;
+    color: lavender;
+    width: 30%;
+    border: 1pt solid white;
+    
+   
+}
+
+.rightb:hover {
+    background-color: cornflowerblue;
+    color: lightgreen;
+}
+
 
 
 ol {
