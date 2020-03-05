@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: cursive;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h5 {
+    color: black;
+
+}
+
+p {
+    margin: 1em;
+
+}
+
+p2 {
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    background-color: cornflowerblue;
+    padding: .25em .5em;
+    line-height: 2.5;
+    
+}
+
+a:hover {
+    color: azure;
+}
+
+img {
+   border: black 1px solid;
+   align-items: center;
+   width: 25%;
+   height: 25%;
+   margin: .5em;
+}
+
+.gallery {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    background-color: lightgreen;
+    border: 1px solid black;
+    
+}
+
+ul {
+    margin-left: 1.5em;
+    color: darkblue;
+    list-style: none;
+
+}
+
+ul2 {
+    
+    display: grid;
+    
+    
+}
+
+
+ol {
+    list-style: none;
+    background-color: lightgreen;
+    color: darkblue;
+    padding-left: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    float: left;
+    width: 50%;
+    margin-right: .75em;
+    margin-bottom: .25em;
+    box-shadow: 0  10px 20px rgba(0, 21, 83, 0.7);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: auto 100px;
+    grid-template-areas: 
+       "head head head head"
+       "nav nav nav nav"
+       "main main main main"
+       "main main main main"
+       "foot foot foot foot"  
+    ;
+}
+
+.head {
+    background-color: cornflowerblue;
+    color: lightgreen;
+    font-size: small;
+    margin: 0;
+    text-align: left;
+}
+
+.nav {
+    display: block;
+    padding-left: .5em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+.main {
+    columns: 1;
+    border-left: cornflowerblue 1.5em solid;
+    
+    
+}
+
+.foot {
+    columns: 1;
+    background-color: lightgreen;
+    padding: 1em;
+    margin-left: 0;
+}
+
