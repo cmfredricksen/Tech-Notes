@@ -60,16 +60,22 @@
     <h3>Step by Step Project Setup</h3>
   
     <ol>
-        <li>Create a folder on your desktop</li>
-        <li>Open in Visual Studio Code</li>
-        <li>Add files/folders</li>
-        <li>OPen Terminal</li>
-        <li>git init</li>
-        <li>ls -a</li>
-        <li>git status</li>
-        <li>add files to staging area using git add</li>
-        <li>git commit -file name- -m"message on commit"</li>
-        <li>git push...if it is your first time see steps below</li>
+        <li>Create a folder on your desktop - 
+            This folder will contain your project files, such as your index, styles, scripts and images.
+        </li>
+        <li>Open in Visual Studio Code -
+            You can do this by right clicking on your folder and selecting open with, then choose Visual Studio Code or your preferred editor.
+        </li>
+        <li>Add files/folders -
+            Go to <strong>File > New</strong> and create your files. Examples are index.html, or style.css.
+        </li>
+        <li>Open Terminal - Go to <strong>Terminal > New Terminal</strong> and a new terminal window will open.</li>
+        <li>On the command line type <strong> git init</strong> - This will initiate a repository for your folder. Git will start tracking your work.</li>
+        <li>Type in <strong>ls -a</strong> and you will see the repository listed in the hidden files.</li>
+        <li><strong>git status</strong> - This will show if your branch is up to date, what is staged, what is awaiting commit.</li>
+        <li>add files to staging area using <strong>git add</strong> file_name (file name being your file name that you want to commit)</li>
+        <li>Once you have added your files to the staging area you are ready to <strong>git commit</strong> file_name <strong> -m "message on commit"</strong>. You always add a message about the commit, like what changes you made.</li>
+        <li><strong>git push</strong> This will push a copy of your repository to github. If it is your first time see the steps below</li>
     </ol>
 
     <a1 href="#top">^^</a1>
@@ -81,8 +87,8 @@
       <ol>
          <li>Go to github.com and sign in to your account.</li>
          <li>Make a new blank repository, do not add the readme file at this time.</li>
-         <li>Return to the terminal and use the command $git remote add origin "link to repo" The link to the repo is listed on the repository page, you may simply copy it and paste it into the command line.</li>
-         <li>git push -u origin master</li>
+         <li>Return to the terminal and use the command <strong>git remote add origin "link to repo"</strong> The link to the repo is listed on the repository page on github, you may simply copy it and paste it into the command line.</li>
+         <li>Next, type in the command <strong>git push -u origin master</strong></li>
       </ol>
   
     <p>Once you have connected your local project to your github repository then you can simply commit, then use git push.</p>
@@ -90,9 +96,9 @@
     <p>Once you are set up and have your files connected to git hub, then the process of saving versions of your work is simple and streamlined. Here it is...</p>
   
       <ol>
-          <li>git add</li>
-          <li>git commit -m""</li>
-          <li>git push</li>
+          <li><strong>git add</strong> file_name</li>
+          <li><strong>git commit</strong> file_name <strong> -m "message"</strong></li>
+          <li><strong>git push</strong></li>
       </ol>
 
       <a1 href="#top">^^</a1>
@@ -103,13 +109,13 @@
         
             <li>On Github navigate to the repo you want to clone to your computer</li>
             <li>Click Clone and copy the url posted there</li>
-            <li>Open Git Bash</li>
-            <li>Change Directory (cd) to the one you want to place the repo in</li>
-            <li>Git Init</li>
-            <li>Git Clone --url of remote repo--</li>
-            <li>Git Remote add origin --url of remote repo--</li>
-            <p>Once you have cloned the repo then do the git pull command to bring the files from your remote repo to the desktop.</p>
-            <li>Git Pull --url of remote repo--</li>
+            <li>Open Git Bash (Terminal in Visual Studio Code)</li>
+            <li>Change Directory (cd) to the one you want to place the repo in by typing <strong>cd</strong> directory_name (directory is the folder you are putting the files in.</li>
+            <li><strong>Git Init</strong> will initiate version tracking with git.</li>
+            <li><strong>Git Clone</strong> --url of remote repo--</li>
+            <li><strong>Git Remote add origin</strong> --url of remote repo--</li>
+            <p>Once you have cloned the repo then do the <strong>git pull</strong> command to bring the files from your remote repo to the desktop.</p>
+            <li><strong>Git Pull</strong> --url of remote repo--</li>
         </ul><br>
   
      <p>And thats it you are all up to date and keeping each version you make along the way.</p><br>
