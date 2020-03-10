@@ -1,4 +1,9 @@
 # three
+Update March 10 2020
+
+This is now a website which has some git basics and a DIY cross-platform planner. I will be adding more soon to both pages, along with more pages, covering other things I am learning.
+
+
 I set up this repo to further practice using git and github to enhance my workflow. I am also learning html and css, plus visual studio code and terminal.
 
 I am building a bunch of webpages with randomly generated content, ie. whatever comes to mind in the moment I need some space filler.
