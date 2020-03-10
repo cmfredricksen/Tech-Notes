@@ -66,10 +66,13 @@ h6 {
 
 p {
     margin: .5em;
-    
-
 } 
 
+.p2 {
+    font-variant: small-caps;
+    margin:.5em;
+    margin-top: 1.5em;
+}
 
 a {
     text-decoration: none;
@@ -123,6 +126,10 @@ ol {
     padding-right: .5em;
     
     
+}
+
+ol2 {
+    font-weight: bolder;
 }
 
 ul {
