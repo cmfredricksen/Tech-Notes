@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
     margin: 0;
     padding: 0;
     display: grid;
@@ -14,7 +15,7 @@ body {
     grid-template-rows: auto 10vh;
     grid-column: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 
-       "head head head head"
+       "head head nav2 nav2"
        "side nav nav nav"
        "side main main main"
        "side main main main"
@@ -22,26 +23,54 @@ body {
 }
 
 
+/*small screens*/
 
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     body {
-        display: flow-root;
+        display: grid;
+        grid-template-areas: 
+           "head"
+           "nav2"
+           "side"
+           "nav"
+           "main"
+           "foot";
     }
+
+    .header {
+        text-align: center;
+        
+    }
+
+    .main {
+        text-align: left;
+    }
+
+    .side {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: grid;
+        font-size: 1.5em;
+    }
+
+    .foot {
+        columns: 1;
+    }
+
+    
 }
 
-@media only screen and (max-width:400px) {
-    nav {
-        display: table-column;
-    }
-}
 
-@media only screen and (max-width:600px) {
+/*
+@media only screen and (min-width:600px) {
     footer {
         display: flow-root;
     }
-}
+}*/
 
+h1 {
+    padding-bottom: 1em;
+}
 
 h3 {
    margin: .5em;
@@ -78,17 +107,19 @@ a {
     text-decoration: none;
     background-color: lightgreen;
     color: black;
-    margin: .5em;
+    padding: .5em;
     line-height: 1.5em;
-    padding: .12em;
+    
+
 } 
 
 a1 {
-    color: white;
+    color: black;
+    padding: .5em;
 }
 
 a1:hover {
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -98,24 +129,10 @@ a:hover {
     
 }
 
-.rightb {
-    float: right;
-    padding: .5em;
-    
-    background-color: cornflowerblue;
-    color: lavender;
-    width: 30%;
-    border: 1pt solid white;
-    
-   
+img {
+    width: 100%;
+    height: auto;
 }
-
-.rightb:hover {
-    background-color: cornflowerblue;
-    color: lightgreen;
-}
-
-
 
 ol {
     font-style: oblique;
@@ -174,12 +191,18 @@ li3 {
     background-color: lemonchiffon;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   
+    text-align: center;
 }
 
 .nav2 {
-    background-color: lemonchiffon;
-    padding: .5em;
+    background-color: plum;
+    margin: auto;
+    grid-area: nav2;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: -1em;
+    
 
 }
 
@@ -187,7 +210,7 @@ li3 {
 .side {
     grid-area: side;
     background-color: lavenderblush;
-    font-size: .75em;
+    font-size: 1rem;
     border: 2px lemonchiffon solid;
 }
 
@@ -213,12 +236,10 @@ li3 {
 .foot {
     grid-area: foot;
     background-color: lightsteelblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   
     
+    }
 
-    
-}
 
 
 
