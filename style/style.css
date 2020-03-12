@@ -113,12 +113,12 @@ a {
 
 } 
 
-a1 {
+.a1 {
     color: black;
     padding: .5em;
 }
 
-a1:hover {
+.a1:hover {
     color: white;
 }
 
