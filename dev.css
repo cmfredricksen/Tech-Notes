@@ -15,7 +15,8 @@ body {
     "main"
     "main"
     "foot";
-    row-gap: .25em solid white;
+    text-align: center;
+    
 }
 
 h1, h3 {
@@ -25,33 +26,111 @@ h1, h3 {
     color: darkseagreen;
 }
 
+h3 {
+    font-style: italic;
+    padding-bottom: 1.5em;
+}
+
+h4 {
+    font-family: cursive;
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+}
 
 
-
-
-.hearts {
-    font-size: 3em;
-    color: red;
+p {
+    font-size: 1.25em;
+    margin: .5em 0;
     
 }
 
-p {
-    font-size: .80em;
+p.footc {
+    color: darkblue;
+    text-shadow: 2px 2px 3px darkslateblue;
+    
 }
 
 header {
     grid-area: header;
+    display: grid;
+    margin: auto;
+    
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    
+}
+
+li {
+    margin: 0 .5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: thistle;
 }
 
 .nav {
     grid-area: nav;
+    display: inline;
+    color: darkblue;
+    font-size: 2em;
+    background-color: darkcyan;
+    padding: .5em 0;
 }
 
 .main {
     grid-area: main;
     background-color: darkviolet;
+    margin: .5em 0;
+    display: grid;
 }
 
 .foot {
     grid-area: foot;
+    background-color: darkcyan;
+    color: darkblue;
+    
+}
+
+.box {
+    background-color: darkblue;
+    box-shadow: 5px 7px 5px indigo;
+    height: auto;
+    padding: .25em;
+    
+}
+
+.box2 {
+    background-color: darkcyan;
+    color: darkblue;
+    box-shadow: 5px 7px 5px indigo;
+    height: auto;
+    margin: .25em;
+    
+    
+}
+
+.box3 {
+    background-color: darkblue;
+    color: darkseagreen;
+    box-shadow: 5px 7px 5px indigo;
+    height: auto;
+    margin: .25em;
+    
+}
+
+.box {
+    background-color: darkblue;
+    box-shadow: 5px 7px 5px indigo;
+    width: 48%;
+    height: auto;
+    padding: .25em;
+    
 }
