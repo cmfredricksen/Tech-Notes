@@ -9,8 +9,22 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper {
+    display: grid;
+    grid-column: span;
+   
+    grid-template-areas: 
+       "head"
+       "nav"
+       "main"
+       "main"
+       "foot"  
+    ;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
-    font-style: cursive;
+    
     text-align: center;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -26,9 +40,15 @@ p {
 
 }
 
-p2 {
+.p2 {
     margin: 0;
 
+}
+
+.small {
+    font-size: small;
+    color: black;
+    margin-top: .25em;
 }
 
 a {
@@ -46,16 +66,17 @@ a:hover {
 
 img {
    border: black 1px solid;
-   align-items: center;
-   width: 25%;
-   height: 25%;
-   margin: .5em;
+   margin: 10% 10%;
+   width: 80%;
+   height: auto;
+   
 }
 
 .gallery {
-    display: flex;
-    align-content: space-around;
+    
     align-items: center;
+    grid-column: 1fr;
+    grid-row: 1fr .25fr 1fr .25fr 1fr .25fr;
     background-color: lightgreen;
     border: 1px solid black;
     
@@ -68,7 +89,7 @@ ul {
 
 }
 
-ul2 {
+.ul2 {
     
     display: grid;
     
@@ -83,25 +104,11 @@ ol {
     padding-left: .5em;
     padding-top: 1em;
     padding-bottom: 1em;
-    float: left;
-    width: 50%;
-    margin-right: .75em;
-    margin-bottom: .25em;
-    box-shadow: 0  10px 20px rgba(0, 21, 83, 0.7);
+    width: 100%;
+    margin: auto;
+    
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row: auto 100px;
-    grid-template-areas: 
-       "head head head head"
-       "nav nav nav nav"
-       "main main main main"
-       "main main main main"
-       "foot foot foot foot"  
-    ;
-}
 
 .head {
     background-color: cornflowerblue;
@@ -109,28 +116,56 @@ ol {
     font-size: small;
     margin: 0;
     text-align: left;
+    grid-area: head;
+    padding: .75em;
 }
 
 .nav {
     display: block;
-    padding-left: .5em;
-    padding-top: .75em;
-    padding-bottom: .75em;
     background-color: lightgreen;
     color: darkblue;
+    grid-area: nav;
+    margin: auto;
+    padding: 0 .5em;
+
 }
 
 .main {
     columns: 1;
     border-left: cornflowerblue 1.5em solid;
+    grid-area: main;
     
     
 }
 
 .foot {
-    columns: 1;
+    
     background-color: lightgreen;
-    padding: 1em;
-    margin-left: 0;
+    padding: .5em 0;;
+    grid-area: foot;
+    display: inline-flexbox;
+}
+
+/*small screens*/
+
+@media only screen and (min-width: 480px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: .75fr 1fr;
+        grid-template-rows: 50px auto;
+        grid-template-areas: 
+        "head nav"
+        "main main"
+        "foot foot";
+    }
+
+    .nav {
+        display: inline;
+        font-weight: bolder;
+        margin: 0;
+        vertical-align: middle;
+        
+        background-color: lightgreen;
+    }
 }
 

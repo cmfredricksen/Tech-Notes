@@ -57,6 +57,10 @@ body {
         columns: 1;
     }
 
+    .nav2 {
+        font-size: small;
+    }
+
     
 }
 
@@ -76,6 +80,7 @@ h3 {
    margin: .5em;
    padding: .5em;
    background-color: lightcyan;
+   text-align: center;
 }
 
 h4 {
@@ -107,15 +112,17 @@ a {
     text-decoration: none;
     background-color: lightgreen;
     color: black;
-    padding: .5em;
-    line-height: 1.5em;
+    padding: .25em;
+    
+    
     
 
 } 
 
 .a1 {
     color: black;
-    padding: .5em;
+    padding: 0 .25em;
+    
 }
 
 .a1:hover {
@@ -188,10 +195,11 @@ li3 {
 
 .nav {
     grid-area: nav;
-    background-color: lemonchiffon;
-    display: grid;
+    background-color: plum;
+    display: inline-block;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    padding: .5em 0;
 }
 
 .nav2 {
@@ -199,10 +207,9 @@ li3 {
     margin: auto;
     grid-area: nav2;
     text-align: center;
-    justify-content: center;
-    padding: 1em;
-    padding-bottom: -1em;
+    padding: .5em;
     
+  
 
 }
 
