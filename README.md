@@ -1,7 +1,7 @@
 # three
 Update March 10 2020
 
-This is now a website which has some git basics and a DIY cross-platform planner. I will be adding more soon to both pages, along with more pages, covering other things I am learning.
+This is now a website which has some git basics, enough to help you set up your first repository.. I will be adding more soon, along with more pages, covering other things I am learning.
 
 
 I set up this repo to further practice using git and github to enhance my workflow. I am also learning html and css, plus visual studio code and terminal.
